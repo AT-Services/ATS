@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     color: #222;
     text-align: center;
     padding: 0 15px;
@@ -29,7 +29,7 @@ header::before {
     left: 50%;
     width: 160px;
     height: 160px;
-    background: url('logo.png') no-repeat center center;
+    background: url('LOGO (1).png') no-repeat center center;
     background-size: contain;
     opacity: 0.1;
     transform: translate(-50%, -50%);
