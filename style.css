@@ -1,63 +1,69 @@
-/* Styles déjà existants ici... */
-
-/* Bouton "Créer un compte" vert */
-#createAccountBtn {
-    background-color: #198754; /* vert */
-}
-
-#createAccountBtn:hover {
-    background-color: #145c32;
-}
-
-/* Formulaire caché par défaut */
-.hidden {
-    display: none;
-}
-
-/* Style formulaire */
-#accountFormSection {
-    margin-top: 50px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    background-color: #fafafa;
-}
-
-#accountFormSection h2 {
-    margin-bottom: 20px;
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #ffffff;
+    color: #333;
     text-align: center;
 }
 
-#accountForm {
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.buttons {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-#accountForm input {
-    padding: 12px 15px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-#accountForm input:focus {
-    border-color: #0d6efd;
-}
-
-.submit-btn {
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     background-color: #0d6efd;
-    width: 100%;
-    font-weight: 600;
     color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100%;
+    transition: 0.3s ease;
 }
 
-.submit-btn:hover {
+
+.btn:hover {
     background-color: #084298;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
 }
