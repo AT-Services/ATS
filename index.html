@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Addala Travel Services</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>🌍 Addala Travel Services</h1>
-        <p>Explorez le monde avec nous !</p>
+        <p>Explore the world with us!</p>
     </header>
 
     <main>
-        <h2>Contactez-nous</h2>
+        <h2>Connect with us</h2>
         <div class="buttons">
             <a href="https://wa.me/213560136324" class="btn" target="_blank">
                 <i class="fab fa-whatsapp"></i> WhatsApp
@@ -30,46 +30,11 @@
             <a href="https://www.instagram.com/addala_travel_services/" class="btn" target="_blank">
                 <i class="fab fa-instagram"></i> Instagram
             </a>
-
-            <a href="https://maps.app.goo.gl/kMyJbUJ1cKNZpAEw5?g_st=ic" class="btn" target="_blank">
-                <i class="fas fa-map-marker-alt"></i> Notre Adresse
-            </a>
-
-            <a href="#" class="btn" id="createAccountBtn">
-                <i class="fas fa-user-plus"></i> Créer un compte
-            </a>
         </div>
-
-        <!-- Formulaire caché -->
-        <section id="accountFormSection" class="hidden">
-            <h2>Créer un compte</h2>
-            <form id="accountForm" action="#" method="POST">
-                <input type="text" name="name" placeholder="Nom complet" required />
-                <input type="email" name="email" placeholder="Adresse e-mail" required />
-                <input type="password" name="password" placeholder="Mot de passe" required />
-                <button type="submit" class="btn submit-btn">S’inscrire</button>
-            </form>
-        </section>
     </main>
 
     <footer>
-        &copy; 2025 Addala Travel Services. Tous droits réservés.
+        &copy; 2025 Addala Travel Services. All rights reserved.
     </footer>
-
-    <script>
-        // Afficher/cacher le formulaire au clic sur "Créer un compte"
-        const createBtn = document.getElementById('createAccountBtn');
-        const formSection = document.getElementById('accountFormSection');
-
-        createBtn.addEventListener('click', function(event) {
-            event.preventDefault(); // éviter le scroll ou redirection
-            if (formSection.classList.contains('hidden')) {
-                formSection.classList.remove('hidden');
-                formSection.scrollIntoView({behavior: "smooth"});
-            } else {
-                formSection.classList.add('hidden');
-            }
-        });
-    </script>
 </body>
 </html>
